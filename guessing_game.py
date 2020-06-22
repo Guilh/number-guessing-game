@@ -33,7 +33,7 @@ def start_game():
                 continue
         except (ValueError, TypeError) as err:
             print("That's not a valid value. Try again.")
-            print("({})".format(err))
+            print(f"({err})")
         else:
             print(f"\nYou got it! It took you {attempts} attempt(s) to guess the number {randomNumber}.")
             scores.append(attempts)
